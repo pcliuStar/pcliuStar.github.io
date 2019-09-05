@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>SpringBoot快速入门 | 刘先森de博客</title>
+  <title>Thymeleaf使用语法 | 刘先森de博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="SpringBoot简介简单概述​    官方网站：http://spring.io/projects ​    SpringBoot是Spring项目中的一个子工程，与我们所熟知的Spring-framework 同属于spring的产品。它设计目的是用来简化新Spring应用的初始搭建以及开发过程，最主要作用就是帮我们快速的构建庞大的spring项目，并且尽可能的减少一切xml配置，做到开箱即">
-<meta name="keywords" content="SpringBoot">
+  <meta name="description" content="使用准备​    在SpringBoot的pom.xml文件里面引入Thymeleaf的启动器 1234&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt;&amp;">
+<meta name="keywords" content="Thymeleaf">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SpringBoot快速入门">
-<meta property="og:url" content="http://yoursite.com/2019/09/05/SpringBoot快速入门/index.html">
+<meta property="og:title" content="Thymeleaf使用语法">
+<meta property="og:url" content="http://yoursite.com/2019/09/06/Thymeleaf使用语法/index.html">
 <meta property="og:site_name" content="刘先森de博客">
-<meta property="og:description" content="SpringBoot简介简单概述​    官方网站：http://spring.io/projects ​    SpringBoot是Spring项目中的一个子工程，与我们所熟知的Spring-framework 同属于spring的产品。它设计目的是用来简化新Spring应用的初始搭建以及开发过程，最主要作用就是帮我们快速的构建庞大的spring项目，并且尽可能的减少一切xml配置，做到开箱即">
+<meta property="og:description" content="使用准备​    在SpringBoot的pom.xml文件里面引入Thymeleaf的启动器 1234&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt;&amp;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-05T13:37:29.669Z">
+<meta property="og:updated_time" content="2019-09-05T14:41:48.414Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SpringBoot快速入门">
-<meta name="twitter:description" content="SpringBoot简介简单概述​    官方网站：http://spring.io/projects ​    SpringBoot是Spring项目中的一个子工程，与我们所熟知的Spring-framework 同属于spring的产品。它设计目的是用来简化新Spring应用的初始搭建以及开发过程，最主要作用就是帮我们快速的构建庞大的spring项目，并且尽可能的减少一切xml配置，做到开箱即">
+<meta name="twitter:title" content="Thymeleaf使用语法">
+<meta name="twitter:description" content="使用准备​    在SpringBoot的pom.xml文件里面引入Thymeleaf的启动器 1234&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt;&amp;">
   
     <link rel="alternative" href="/atom.xml" title="刘先森de博客" type="application/atom+xml">
   
@@ -166,7 +166,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-SpringBoot快速入门" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Thymeleaf使用语法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
 		
@@ -175,13 +175,13 @@
         
   
     <h1 class="article-title" itemprop="name">
-      SpringBoot快速入门
+      Thymeleaf使用语法
     </h1>
   
 
         
-        <a href="/2019/09/05/SpringBoot快速入门/" class="archive-article-date">
-  	<time datetime="2019-09-05T12:21:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-05</time>
+        <a href="/2019/09/06/Thymeleaf使用语法/" class="archive-article-date">
+  	<time datetime="2019-09-06T02:13:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-06</time>
 </a>
 
         <!-- 不蒜子统计 -->
@@ -220,7 +220,7 @@
 	<div id="toc-article" class="toc-article">
 	    <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
 		<strong class="toc-title">文章目录</strong>
-           <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#SpringBoot简介"><span class="toc-number">1.</span> <span class="toc-text">SpringBoot简介</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#简单概述"><span class="toc-number">1.1.</span> <span class="toc-text">简单概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#产生背景"><span class="toc-number">1.2.</span> <span class="toc-text">产生背景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#优点"><span class="toc-number">1.3.</span> <span class="toc-text">优点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SpringBoot快速入门"><span class="toc-number">2.</span> <span class="toc-text">SpringBoot快速入门</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#第一步：创建Maven的Web工程"><span class="toc-number">2.1.</span> <span class="toc-text">第一步：创建Maven的Web工程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第二步：引入springboot相关依赖"><span class="toc-number">2.2.</span> <span class="toc-text">第二步：引入springboot相关依赖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第三步：添加spring-boot启动器依赖"><span class="toc-number">2.3.</span> <span class="toc-text">第三步：添加spring-boot启动器依赖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第四步：编写启动类"><span class="toc-number">2.4.</span> <span class="toc-text">第四步：编写启动类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第五步：编写Controller类"><span class="toc-number">2.5.</span> <span class="toc-text">第五步：编写Controller类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第六步：运行主程序测试"><span class="toc-number">2.6.</span> <span class="toc-text">第六步：运行主程序测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第七步：简化部署"><span class="toc-number">2.7.</span> <span class="toc-text">第七步：简化部署</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SpringBoot热部署"><span class="toc-number">3.</span> <span class="toc-text">SpringBoot热部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#补充"><span class="toc-number">3.1.</span> <span class="toc-text">补充</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#底层分析"><span class="toc-number">4.</span> <span class="toc-text">底层分析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#父项目"><span class="toc-number">4.1.</span> <span class="toc-text">父项目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#启动器"><span class="toc-number">4.2.</span> <span class="toc-text">启动器</span></a></li></ol></li></ol>
+           <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用准备"><span class="toc-number">1.</span> <span class="toc-text">使用准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表达式"><span class="toc-number">2.</span> <span class="toc-text">表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#变量表达式"><span class="toc-number">2.1.</span> <span class="toc-text">${}:变量表达式:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#：选择变量表达式"><span class="toc-number">2.2.</span> <span class="toc-text">{} ：选择变量表达式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#…-Message-表达式"><span class="toc-number">2.3.</span> <span class="toc-text">#{…} : Message 表达式</span></a></li></ol></li></ol>
          </div>
    <script type="text/javascript">
 	function showToc(){
@@ -243,47 +243,29 @@
 	
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="SpringBoot简介"><a href="#SpringBoot简介" class="headerlink" title="SpringBoot简介"></a>SpringBoot简介</h3><h4 id="简单概述"><a href="#简单概述" class="headerlink" title="简单概述"></a>简单概述</h4><p>​    官方网站：<a href="http://spring.io/projects" target="_blank" rel="noopener">http://spring.io/projects</a></p>
-<p>​    SpringBoot是Spring项目中的一个子工程，与我们所熟知的Spring-framework 同属于spring的产品。它设计目的是用来简化新Spring应用的初始搭建以及开发过程，最主要作用就是帮我们快速的构建庞大的spring项目，并且尽可能的减少一切xml配置，做到开箱即用，迅速上手，让我们关注与业务而非配置</p>
-<h4 id="产生背景"><a href="#产生背景" class="headerlink" title="产生背景"></a>产生背景</h4><p>在之前学习SSM框架的时候，我们可能会遇到下面的这些问题</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">复杂的配置</span><br><span class="line">	项目各种配置其实是开发时的损耗</span><br><span class="line">	写配置挤占了写应用程序逻辑的时间</span><br><span class="line">混乱的依赖管理</span><br><span class="line">	项目当中添加很多库已经很麻烦了</span><br><span class="line">	还要知道这些库的哪个版本和其他库不会有冲突</span><br><span class="line">	一旦选错了依赖的版本</span><br><span class="line">	随之而来的不兼容问题就会造成项目的致命性伤害</span><br></pre></td></tr></table></figure>
+        <h3 id="使用准备"><a href="#使用准备" class="headerlink" title="使用准备"></a>使用准备</h3><p>​    在SpringBoot的pom.xml文件里面引入Thymeleaf的启动器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
 
 <a id="more"></a>
 
-<p>而SpringBoot的出现可以给我们轻易的解决上面问题</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Spring Boot 简化了基于Spring的应用开发</span><br><span class="line">只需要“run”就能创建一个独立的、生产级别的Spring应用</span><br><span class="line">Spring Boot为Spring平台及第三方库提供开箱即用的设置</span><br></pre></td></tr></table></figure>
+<p>​    添加启动器的主要功能有下面这些</p>
+<p>​        1.SpringBoot会自动为Thymeleaf注册一个视图解析器ThymeleafViewResolver</p>
+<p>​        2.还配置了模板文件（html）的位置，与jsp类似的前缀+ 视图名 + 后缀风格</p>
+<p>​        3.与解析JSP的InternalViewResolver类似，Thymeleaf也会根据前缀和后缀来确定模板文件的位置</p>
+<p>​        4.可以在ThymeleafProperties.java的源码文件里面查看关于Thymeleaf的信息</p>
+<p>​        5.Thymeleaf的后缀名是.html，文件必须存放在/resources/templates文件夹下面</p>
+<p>​        6.在编写的html里面引入名称空间</p>
+<pre><code>&lt;html lang=&quot;en&quot; xmlns:th=&quot;http://www.thymeleaf.org&quot;&gt;</code></pre><h3 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h3><p>​    如果我们在一个控制器里面有下面这些代码，主要是用来存放一个对象，再使用表达式去取出对象里面的内容</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/hello"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">hello</span><span class="params">(Model model)</span></span>&#123;</span><br><span class="line">        List&lt;Hero&gt; allHero = heroService.getAllHero();</span><br><span class="line">        System.out.println(allHero);</span><br><span class="line">        model.addAttribute(<span class="string">"allHero"</span>, allHero);</span><br><span class="line"></span><br><span class="line">        Hero hero = <span class="keyword">new</span> Hero();</span><br><span class="line">        hero.setUsername(<span class="string">"向家冉"</span>);</span><br><span class="line">        hero.setPhone(<span class="string">"15903976643"</span>);</span><br><span class="line">        hero.setProfession(<span class="string">"学生"</span>);</span><br><span class="line">        <span class="comment">// 存放一个对象</span></span><br><span class="line">        model.addAttribute(<span class="string">"hero"</span>, hero);</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"index"</span>;</span><br><span class="line">    &#125;;</span><br></pre></td></tr></table></figure>
 
-<h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.以jar包方式独立运行（jar -jar xxx.jar）,内嵌Servlet容器（tomcat, jetty）,无需以war包形式部署到独立的servlet容器中</span><br><span class="line">2.提供starter简化maven依赖包配置</span><br><span class="line">3.自动装配bean(大多数场景)</span><br><span class="line">4.提倡使用java配置和注解配置结合而无需xml配置</span><br><span class="line">5.提供了一些大型项目中常见的非功能性特性，如内嵌服务器、安全、指标，健康检测、外部化配置等</span><br><span class="line">6.为所有 Spring 的开发者提供一个非常快速的、广泛接受的入门体验</span><br></pre></td></tr></table></figure>
+<h4 id="变量表达式"><a href="#变量表达式" class="headerlink" title="${}:变量表达式:"></a>${}:变量表达式:</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;h4 th:text="$&#123;hero.username&#125;"&gt;&lt;/h4&gt;</span><br><span class="line">&lt;h4 th:text="$&#123;hero.phone&#125;"&gt;&lt;/h4&gt;</span><br><span class="line">&lt;h4 th:text="$&#123;hero.profession&#125;"&gt;&lt;/h4&gt;</span><br></pre></td></tr></table></figure>
 
-<h3 id="SpringBoot快速入门"><a href="#SpringBoot快速入门" class="headerlink" title="SpringBoot快速入门"></a>SpringBoot快速入门</h3><h4 id="第一步：创建Maven的Web工程"><a href="#第一步：创建Maven的Web工程" class="headerlink" title="第一步：创建Maven的Web工程"></a>第一步：创建Maven的Web工程</h4><h4 id="第二步：引入springboot相关依赖"><a href="#第二步：引入springboot相关依赖" class="headerlink" title="第二步：引入springboot相关依赖"></a>第二步：引入springboot相关依赖</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;parent&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.1.3.RELEASE&lt;/version&gt;</span><br><span class="line">&lt;/parent&gt;</span><br></pre></td></tr></table></figure>
+<p>由于Thymeleaf自身带有缓存机制，所以需要在配置文件当中取消</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">spring:</span><br><span class="line">	thymeleaf:</span><br><span class="line">      # 设置编码格式</span><br><span class="line">      encoding: UTF-8</span><br><span class="line">      # 关闭自身的缓存机制</span><br><span class="line">      cache: false</span><br><span class="line">      # 设置文件类型</span><br><span class="line">      mode: HTML5</span><br></pre></td></tr></table></figure>
 
-<h4 id="第三步：添加spring-boot启动器依赖"><a href="#第三步：添加spring-boot启动器依赖" class="headerlink" title="第三步：添加spring-boot启动器依赖"></a>第三步：添加spring-boot启动器依赖</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="：选择变量表达式"><a href="#：选择变量表达式" class="headerlink" title="{} ：选择变量表达式"></a>{} ：选择变量表达式</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div th:object=<span class="string">"$&#123;hero&#125;"</span>&gt;</span><br><span class="line">    &lt;p th:text="*&#123;username&#125;"&gt;&lt;/p&gt;</span><br><span class="line">    &lt;p th:text="*&#123;phone&#125;"&gt;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
-<h4 id="第四步：编写启动类"><a href="#第四步：编写启动类" class="headerlink" title="第四步：编写启动类"></a>第四步：编写启动类</h4><p>​            添加@SpringBootApplication注解，来标注一个主程序类，声明这是一个SpringBoot应用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@SpringBootApplication</span><br><span class="line">public class Application &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">    	// spring应用启动</span><br><span class="line">        SpringApplication.run(Application.class,args);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="第五步：编写Controller类"><a href="#第五步：编写Controller类" class="headerlink" title="第五步：编写Controller类"></a>第五步：编写Controller类</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@Controller</span><br><span class="line">public class HelloController()&#123;</span><br><span class="line">    @ResponseBody</span><br><span class="line">    @RequestMapping(&quot;/hello&quot;)</span><br><span class="line">    publiu String hello()&#123;</span><br><span class="line">      return &quot;hello world&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="第六步：运行主程序测试"><a href="#第六步：运行主程序测试" class="headerlink" title="第六步：运行主程序测试"></a>第六步：运行主程序测试</h4><p>​        在浏览器的地址栏输入对应的请求映射就可以在浏览器返回   hello world</p>
-<h4 id="第七步：简化部署"><a href="#第七步：简化部署" class="headerlink" title="第七步：简化部署"></a>第七步：简化部署</h4><p>​        将下面的这个插件引入到pom.xml文件里面，这个插件可以直接将应用打包成一个可执行的jar包 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;build&gt;</span><br><span class="line">	&lt;plugins&gt;</span><br><span class="line">		&lt;plugin&gt;</span><br><span class="line">			&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">			&lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">		&lt;/plugin&gt;</span><br><span class="line">	&lt;/plugins&gt;</span><br><span class="line">&lt;/build&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="SpringBoot热部署"><a href="#SpringBoot热部署" class="headerlink" title="SpringBoot热部署"></a>SpringBoot热部署</h3><p>​    为了解决在修改代码后多次重新启动应用的烦恼，SpringBoot支持热部署，即将下面的这段代码引入即可</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt; </span><br><span class="line">	&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; </span><br><span class="line">	&lt;artifactId&gt;spring-boot-devtools&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h4><p>​    如遇到spring boot run启动时非常缓慢使用以下方法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.在命令行中输入hostname  查询当前主机名称</span><br><span class="line">2.到C盘Windows\System32\drivers\etc中找到host文件</span><br><span class="line">3.复制一份其它地方进行编辑,编辑时在hostname之后添加.local, 再将修改后的文件重新复制到C盘刚才的位置进行替换</span><br><span class="line">4.注意事项: 127.0.0.1和local之间是两个tab 不是空格</span><br></pre></td></tr></table></figure>
-
-<h3 id="底层分析"><a href="#底层分析" class="headerlink" title="底层分析"></a>底层分析</h3><h4 id="父项目"><a href="#父项目" class="headerlink" title="父项目"></a>父项目</h4><p>​    分析pom文件,找到刚才添加的父依赖如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;parent&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.1.3.RELEASE&lt;/version&gt;</span><br><span class="line">&lt;/parent&gt;</span><br></pre></td></tr></table></figure>
-
-<p>​    点击进入源码后发现它其实还依赖一个父项目</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;parent&gt;</span><br><span class="line">     &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">     &lt;artifactId&gt;spring-boot-dependencies&lt;/artifactId&gt;</span><br><span class="line">     &lt;version&gt;2.1.3.RELEASE&lt;/version&gt;</span><br><span class="line">     &lt;relativePath&gt;../../spring-boot-dependencies&lt;/relativePath&gt;</span><br><span class="line">&lt;/parent&gt;</span><br></pre></td></tr></table></figure>
-
-<p>​    他来真正管理Spring Boot应用里面的所有依赖版本, 有了它的存在后。以后我们导入依赖默认是不需要写版本。 但是没有在dependencies里面管理的依赖需要手动声明版本号</p>
-<h4 id="启动器"><a href="#启动器" class="headerlink" title="启动器"></a>启动器</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
-
-<p>​    spring-boot-starter：spring-boot场景启动器；帮我们导入了web模块正常运行所依赖的组件；<br> 　　Spring Boot将所有的功能场景都抽取出来，做成一个个的starters（启动器），只需要在项目里面引入这些starter 相关场景的所有依赖都会导入进来。要用什么功能就导入什么场景的启动器</p>
+<h4 id="…-Message-表达式"><a href="#…-Message-表达式" class="headerlink" title="#{…} : Message 表达式"></a>#{…} : Message 表达式</h4><p>​        主要在国际化当中使用</p>
 
       
 
@@ -331,7 +313,7 @@
 				
 				<br>
 				<strong>本文链接：</strong>
-				http://yoursite.com/2019/09/05/SpringBoot快速入门/
+				http://yoursite.com/2019/09/06/Thymeleaf使用语法/
 				<br>
 				<strong>版权声明：</strong>
 				本作品采用
@@ -361,7 +343,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">SpringBoot</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Thymeleaf</a>
         		</li>
       		
 		</ul>
@@ -420,7 +402,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/vl/create-qr-code/?size=150x150&data=http://pcliuStar.github.io/2019/09/05/SpringBoot快速入门/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/vl/create-qr-code/?size=150x150&data=http://pcliuStar.github.io/2019/09/06/Thymeleaf使用语法/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -434,18 +416,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/05/SpringBoot中Yaml文件使用/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          SpringBoot中Yaml文件使用
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/05/JQuery动画操作相关方法/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JQuery动画操作相关方法</div>
+    <a href="/2019/09/05/SpringBoot中Yaml文件使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SpringBoot中Yaml文件使用</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -472,7 +445,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#SpringBoot简介"><span class="toc-number">1.</span> <span class="toc-text">SpringBoot简介</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#简单概述"><span class="toc-number">1.1.</span> <span class="toc-text">简单概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#产生背景"><span class="toc-number">1.2.</span> <span class="toc-text">产生背景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#优点"><span class="toc-number">1.3.</span> <span class="toc-text">优点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SpringBoot快速入门"><span class="toc-number">2.</span> <span class="toc-text">SpringBoot快速入门</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#第一步：创建Maven的Web工程"><span class="toc-number">2.1.</span> <span class="toc-text">第一步：创建Maven的Web工程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第二步：引入springboot相关依赖"><span class="toc-number">2.2.</span> <span class="toc-text">第二步：引入springboot相关依赖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第三步：添加spring-boot启动器依赖"><span class="toc-number">2.3.</span> <span class="toc-text">第三步：添加spring-boot启动器依赖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第四步：编写启动类"><span class="toc-number">2.4.</span> <span class="toc-text">第四步：编写启动类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第五步：编写Controller类"><span class="toc-number">2.5.</span> <span class="toc-text">第五步：编写Controller类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第六步：运行主程序测试"><span class="toc-number">2.6.</span> <span class="toc-text">第六步：运行主程序测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第七步：简化部署"><span class="toc-number">2.7.</span> <span class="toc-text">第七步：简化部署</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SpringBoot热部署"><span class="toc-number">3.</span> <span class="toc-text">SpringBoot热部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#补充"><span class="toc-number">3.1.</span> <span class="toc-text">补充</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#底层分析"><span class="toc-number">4.</span> <span class="toc-text">底层分析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#父项目"><span class="toc-number">4.1.</span> <span class="toc-text">父项目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#启动器"><span class="toc-number">4.2.</span> <span class="toc-text">启动器</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用准备"><span class="toc-number">1.</span> <span class="toc-text">使用准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表达式"><span class="toc-number">2.</span> <span class="toc-text">表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#变量表达式"><span class="toc-number">2.1.</span> <span class="toc-text">${}:变量表达式:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#：选择变量表达式"><span class="toc-number">2.2.</span> <span class="toc-text">{} ：选择变量表达式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#…-Message-表达式"><span class="toc-number">2.3.</span> <span class="toc-text">#{…} : Message 表达式</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
