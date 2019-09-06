@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="刘先森de博客">
 <meta property="og:description" content="使用准备​    在SpringBoot的pom.xml文件里面引入Thymeleaf的启动器 1234&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt;&amp;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-05T14:41:48.414Z">
+<meta property="og:updated_time" content="2019-09-06T09:12:31.369Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Thymeleaf使用语法">
 <meta name="twitter:description" content="使用准备​    在SpringBoot的pom.xml文件里面引入Thymeleaf的启动器 1234&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;spring-boot-starter-thymeleaf&amp;lt;/artifactId&amp;gt;&amp;">
@@ -220,7 +220,7 @@
 	<div id="toc-article" class="toc-article">
 	    <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
 		<strong class="toc-title">文章目录</strong>
-           <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用准备"><span class="toc-number">1.</span> <span class="toc-text">使用准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表达式"><span class="toc-number">2.</span> <span class="toc-text">表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#变量表达式"><span class="toc-number">2.1.</span> <span class="toc-text">${}:变量表达式:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#：选择变量表达式"><span class="toc-number">2.2.</span> <span class="toc-text">{} ：选择变量表达式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#…-Message-表达式"><span class="toc-number">2.3.</span> <span class="toc-text">#{…} : Message 表达式</span></a></li></ol></li></ol>
+           <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用准备"><span class="toc-number">1.</span> <span class="toc-text">使用准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表达式"><span class="toc-number">2.</span> <span class="toc-text">表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#变量表达式"><span class="toc-number">2.1.</span> <span class="toc-text">${}:变量表达式:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#：选择变量表达式"><span class="toc-number">2.2.</span> <span class="toc-text">{} ：选择变量表达式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#…-Message-表达式"><span class="toc-number">2.3.</span> <span class="toc-text">#{…} : Message 表达式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#链接地址与参数传递"><span class="toc-number">3.</span> <span class="toc-text">链接地址与参数传递</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#绝对网址"><span class="toc-number">3.1.</span> <span class="toc-text">绝对网址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#上下文相关URL"><span class="toc-number">3.2.</span> <span class="toc-text">上下文相关URL</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#与服务器相关URL"><span class="toc-number">3.3.</span> <span class="toc-text">与服务器相关URL</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#携带参数"><span class="toc-number">3.4.</span> <span class="toc-text">携带参数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#字面值"><span class="toc-number">4.</span> <span class="toc-text">字面值</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#字符串字面值"><span class="toc-number">4.1.</span> <span class="toc-text">字符串字面值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#字符串字面值拼接"><span class="toc-number">4.2.</span> <span class="toc-text">字符串字面值拼接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数字字面值"><span class="toc-number">4.3.</span> <span class="toc-text">数字字面值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#布尔字面值"><span class="toc-number">4.4.</span> <span class="toc-text">布尔字面值</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运算符"><span class="toc-number">5.</span> <span class="toc-text">运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#算术操作符"><span class="toc-number">5.1.</span> <span class="toc-text">算术操作符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#比较运算符"><span class="toc-number">5.2.</span> <span class="toc-text">比较运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#三元运算符"><span class="toc-number">5.3.</span> <span class="toc-text">三元运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#默认表达式"><span class="toc-number">5.4.</span> <span class="toc-text">默认表达式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#内联写法"><span class="toc-number">6.</span> <span class="toc-text">内联写法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#局部变量"><span class="toc-number">7.</span> <span class="toc-text">局部变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#判断"><span class="toc-number">8.</span> <span class="toc-text">判断</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#th-if"><span class="toc-number">8.1.</span> <span class="toc-text">th:if</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#th-unless"><span class="toc-number">8.2.</span> <span class="toc-text">th:unless</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#th-switch"><span class="toc-number">8.3.</span> <span class="toc-text">th:switch</span></a></li></ol></li></ol>
          </div>
    <script type="text/javascript">
 	function showToc(){
@@ -266,6 +266,68 @@
 <h4 id="：选择变量表达式"><a href="#：选择变量表达式" class="headerlink" title="{} ：选择变量表达式"></a>{} ：选择变量表达式</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div th:object=<span class="string">"$&#123;hero&#125;"</span>&gt;</span><br><span class="line">    &lt;p th:text="*&#123;username&#125;"&gt;&lt;/p&gt;</span><br><span class="line">    &lt;p th:text="*&#123;phone&#125;"&gt;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
 <h4 id="…-Message-表达式"><a href="#…-Message-表达式" class="headerlink" title="#{…} : Message 表达式"></a>#{…} : Message 表达式</h4><p>​        主要在国际化当中使用</p>
+<h3 id="链接地址与参数传递"><a href="#链接地址与参数传递" class="headerlink" title="链接地址与参数传递"></a>链接地址与参数传递</h3><h4 id="绝对网址"><a href="#绝对网址" class="headerlink" title="绝对网址"></a>绝对网址</h4><p>​    绝对URL用于创建到其他服务器的链接,它们需要指定一个协议名称(http://或https://)开头</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a th:href="@&#123;http://www/baidu.com&#125;"&gt;跳转链接&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="上下文相关URL"><a href="#上下文相关URL" class="headerlink" title="上下文相关URL"></a>上下文相关URL</h4><p>​    与Web应用程序根相关联URL</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 访问静态文件夹static下面的logo.png图片</span></span><br><span class="line">&lt;img th:src=<span class="string">"@&#123;/logon.png&#125;"</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="与服务器相关URL"><a href="#与服务器相关URL" class="headerlink" title="与服务器相关URL"></a>与服务器相关URL</h4><p>​    服务器相关的URL与上下文相关的URL非常相似</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img th:src=&quot;@&#123;~/logon.png&#125;&quot;/&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="携带参数"><a href="#携带参数" class="headerlink" title="携带参数"></a>携带参数</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a th:href="@&#123;/hello(age=10, sex='man')&#125;"&gt;携带参数&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="字面值"><a href="#字面值" class="headerlink" title="字面值"></a>字面值</h3><h4 id="字符串字面值"><a href="#字符串字面值" class="headerlink" title="字符串字面值"></a>字符串字面值</h4><p>​    有的时候，我们需要在指令中填写基本类型如：字符串、数值、布尔等，并不希望被Thymeleaf解析为变量，这个时候称为字面值。</p>
+<p>​    如果我们从域中取值，使用下面的方法</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h4 th:text="$&#123;hero.username&#125;"&gt;&lt;/h4&gt;</span><br></pre></td></tr></table></figure>
+
+<p>​    但是我们取的值在域中不存在，它就会报错</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h4 th:text="$&#123;hello&#125;"&gt;&lt;/h4&gt;</span><br></pre></td></tr></table></figure>
+
+<p>​    解决上面的办法，我们就需要使用字面值</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h4 th:text="$&#123;'hello'&#125;"&gt;&lt;/h4&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="字符串字面值拼接"><a href="#字符串字面值拼接" class="headerlink" title="字符串字面值拼接"></a>字符串字面值拼接</h4><p>​    有三种方法可以实现字符串的拼接效果</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;h4 th:text="$&#123;'hello' + hero.username&#125;"&gt;&lt;/h4&gt;</span><br><span class="line">&lt;h4 th:text="'hello' + $&#123;hero.username&#125;"&gt;&lt;/h4&gt;</span><br><span class="line">&lt;h4 th:text="|'hello' + $&#123;hero.username&#125;|"&gt;&lt;/h4&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="数字字面值"><a href="#数字字面值" class="headerlink" title="数字字面值"></a>数字字面值</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;h4 th:text="$&#123;50&#125;"&gt;&lt;/h4&gt;		    // 输出结果为50</span><br><span class="line">&lt;h4 th:text="$&#123;50 + 5&#125;"&gt;&lt;/h4&gt;		// 输出结果为55</span><br></pre></td></tr></table></figure>
+
+<h4 id="布尔字面值"><a href="#布尔字面值" class="headerlink" title="布尔字面值"></a>布尔字面值</h4><p>布尔类型的字面值是true或false</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h4 th:text="$&#123;true&#125;"&gt;&lt;/h4&gt;		// 输出结果为true</span><br></pre></td></tr></table></figure>
+
+<p>布尔类型的字面值可以进行判断</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h4 th:text="$&#123;true == false&#125;"&gt;&lt;/h4&gt;	// 输出结果为false</span><br></pre></td></tr></table></figure>
+
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><h4 id="算术操作符"><a href="#算术操作符" class="headerlink" title="算术操作符"></a>算术操作符</h4><p>​    就是+ - * / %的各种运算</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;h2 th:text="8 + 2"&gt;&lt;/h2&gt;				// 10</span><br><span class="line">&lt;h2 th:text="(10 / 3) - 2"&gt;&lt;/h2&gt;		// 3.333</span><br></pre></td></tr></table></figure>
+
+<h4 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h4><p>​    在比较运算符当中，不可以直接使用&gt;, &lt;，因为xml会解析为标签。可以使用&gt; gt，&lt; lt，&gt;= ge， &lt;= le代替</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h4 th:text="(12 lt 5)"&gt;&lt;/h4&gt;		// false</span><br></pre></td></tr></table></figure>
+
+<h4 id="三元运算符"><a href="#三元运算符" class="headerlink" title="三元运算符"></a>三元运算符</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h4 th:text="$&#123;false&#125; ? '真值' : '假值'"&gt;&lt;/h4&gt;	// 假值</span><br></pre></td></tr></table></figure>
+
+<h4 id="默认表达式"><a href="#默认表达式" class="headerlink" title="默认表达式"></a>默认表达式</h4><p>​    如果前面的值为空，显示后面的值  如果不为空，显示自己的数据</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;h3 th:text="null ?: '我是空值' "&gt;&lt;/h3&gt;</span><br><span class="line">&lt;h3 th:text="$&#123;name&#125; ?: '没有这个名字'"&gt;&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="内联写法"><a href="#内联写法" class="headerlink" title="内联写法"></a>内联写法</h3><p>可以使用2种不同的方式，如果我们在上面的控制器里面的方法里面添加</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model.addAttribute(<span class="string">"age"</span>, <span class="string">"&lt;h2&gt;刘文明&lt;/h2&gt;"</span>);</span><br></pre></td></tr></table></figure>
+
+<p>然后我们再进行获取</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--会原样打印出标签的内容--&gt;</span><br><span class="line">&lt;p&gt;[[$&#123;age&#125;]]&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;!--会解析内部的标签--&gt;</span><br><span class="line">&lt;p&gt;[($&#123;age&#125;)]&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h3><p>​    因为我们在上面存放了allHero这个对象，我们可以获取这个对象当中的第一个内容，然后再获取这个内容当中的信息</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div th:with=<span class="string">"firstHero = $&#123;allHero[0]&#125;"</span>&gt;</span><br><span class="line">   &lt;span th:text="$&#123;firstHero.username&#125;"&gt;&lt;/span&gt;</span><br><span class="line">   &lt;span th:text="$&#123;firstHero.profession&#125;"&gt;&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="判断"><a href="#判断" class="headerlink" title="判断"></a>判断</h3><h4 id="th-if"><a href="#th-if" class="headerlink" title="th:if"></a>th:if</h4><p>​    当条件满足时，才会显示标签</p>
+<p>​    如果条件不满足，相当于在页面里面注释</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h4 th:if="true"&gt;如果是真值，就会打印出来&lt;/h4&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="th-unless"><a href="#th-unless" class="headerlink" title="th:unless"></a>th:unless</h4><p>​    当条件不满足时，才会显示标签</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h4 th:unless="false"&gt;如果是假值，就会打印出来&lt;/h4&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="th-switch"><a href="#th-switch" class="headerlink" title="th:switch"></a>th:switch</h4><p>​    判断case语句中哪一个满足添加，如果都不满足，打印最后一个，并且最后一个必须是*</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div th:<span class="keyword">switch</span>=<span class="string">"$&#123;hero.username&#125;"</span>&gt;</span><br><span class="line">    &lt;p th:case="张三"&gt;张三&lt;/p&gt;</span><br><span class="line">    &lt;p th:case="李四"&gt;李四&lt;/p&gt;</span><br><span class="line">    &lt;p th:case="*"&gt;如果没有匹配到用户，打印默认值&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -445,7 +507,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用准备"><span class="toc-number">1.</span> <span class="toc-text">使用准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表达式"><span class="toc-number">2.</span> <span class="toc-text">表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#变量表达式"><span class="toc-number">2.1.</span> <span class="toc-text">${}:变量表达式:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#：选择变量表达式"><span class="toc-number">2.2.</span> <span class="toc-text">{} ：选择变量表达式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#…-Message-表达式"><span class="toc-number">2.3.</span> <span class="toc-text">#{…} : Message 表达式</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用准备"><span class="toc-number">1.</span> <span class="toc-text">使用准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表达式"><span class="toc-number">2.</span> <span class="toc-text">表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#变量表达式"><span class="toc-number">2.1.</span> <span class="toc-text">${}:变量表达式:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#：选择变量表达式"><span class="toc-number">2.2.</span> <span class="toc-text">{} ：选择变量表达式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#…-Message-表达式"><span class="toc-number">2.3.</span> <span class="toc-text">#{…} : Message 表达式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#链接地址与参数传递"><span class="toc-number">3.</span> <span class="toc-text">链接地址与参数传递</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#绝对网址"><span class="toc-number">3.1.</span> <span class="toc-text">绝对网址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#上下文相关URL"><span class="toc-number">3.2.</span> <span class="toc-text">上下文相关URL</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#与服务器相关URL"><span class="toc-number">3.3.</span> <span class="toc-text">与服务器相关URL</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#携带参数"><span class="toc-number">3.4.</span> <span class="toc-text">携带参数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#字面值"><span class="toc-number">4.</span> <span class="toc-text">字面值</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#字符串字面值"><span class="toc-number">4.1.</span> <span class="toc-text">字符串字面值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#字符串字面值拼接"><span class="toc-number">4.2.</span> <span class="toc-text">字符串字面值拼接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数字字面值"><span class="toc-number">4.3.</span> <span class="toc-text">数字字面值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#布尔字面值"><span class="toc-number">4.4.</span> <span class="toc-text">布尔字面值</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运算符"><span class="toc-number">5.</span> <span class="toc-text">运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#算术操作符"><span class="toc-number">5.1.</span> <span class="toc-text">算术操作符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#比较运算符"><span class="toc-number">5.2.</span> <span class="toc-text">比较运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#三元运算符"><span class="toc-number">5.3.</span> <span class="toc-text">三元运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#默认表达式"><span class="toc-number">5.4.</span> <span class="toc-text">默认表达式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#内联写法"><span class="toc-number">6.</span> <span class="toc-text">内联写法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#局部变量"><span class="toc-number">7.</span> <span class="toc-text">局部变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#判断"><span class="toc-number">8.</span> <span class="toc-text">判断</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#th-if"><span class="toc-number">8.1.</span> <span class="toc-text">th:if</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#th-unless"><span class="toc-number">8.2.</span> <span class="toc-text">th:unless</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#th-switch"><span class="toc-number">8.3.</span> <span class="toc-text">th:switch</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -599,10 +661,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">SpringBoot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Shiro</a>
               </li>
              
@@ -611,11 +669,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Thymeleaf</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Thymeleaf</a>
+                <a href="javascript:void(0)" class="js-tag color1">SpringBoot</a>
               </li>
             
             <div class="clearfix"></div>
