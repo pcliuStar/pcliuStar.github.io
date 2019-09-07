@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>JQuery 静态方法与遍历方法 | 刘先森de博客</title>
+  <title>SpringBoot异常处理 | 刘先森de博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="JQuery的常用静态方法分类   语法 作用 参数 返回值    $.trim( str ) 去除字符串两端的空白字符 需要去除空格的字符串 去除空格之后的字符串   $.isArray() 判断指定参数是不是一个数组 需要判断的对象 true/false   $.isWindow() 判断传入的对象是不是window对象 需要判断的对象 true/false   $.isFunction()">
-<meta name="keywords" content="JQuery">
+  <meta name="description" content="SpringBoot中对于异常处理提供了五种处理方式自定义错误页面1.创建一个Maven的项目2.在pom文件里面引入以下的依赖12345678910&amp;lt;dependency&amp;gt;      &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;      &amp;lt;artifactId&amp;gt;spring-boot-starter-we">
+<meta name="keywords" content="SpringBoot">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JQuery 静态方法与遍历方法">
-<meta property="og:url" content="http://yoursite.com/2019/09/04/JQuery-静态方法与遍历方法/index.html">
+<meta property="og:title" content="SpringBoot异常处理">
+<meta property="og:url" content="http://yoursite.com/2019/09/08/SpringBoot异常处理/index.html">
 <meta property="og:site_name" content="刘先森de博客">
-<meta property="og:description" content="JQuery的常用静态方法分类   语法 作用 参数 返回值    $.trim( str ) 去除字符串两端的空白字符 需要去除空格的字符串 去除空格之后的字符串   $.isArray() 判断指定参数是不是一个数组 需要判断的对象 true/false   $.isWindow() 判断传入的对象是不是window对象 需要判断的对象 true/false   $.isFunction()">
+<meta property="og:description" content="SpringBoot中对于异常处理提供了五种处理方式自定义错误页面1.创建一个Maven的项目2.在pom文件里面引入以下的依赖12345678910&amp;lt;dependency&amp;gt;      &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;      &amp;lt;artifactId&amp;gt;spring-boot-starter-we">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-04T12:38:14.168Z">
+<meta property="og:updated_time" content="2019-09-07T05:22:51.663Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JQuery 静态方法与遍历方法">
-<meta name="twitter:description" content="JQuery的常用静态方法分类   语法 作用 参数 返回值    $.trim( str ) 去除字符串两端的空白字符 需要去除空格的字符串 去除空格之后的字符串   $.isArray() 判断指定参数是不是一个数组 需要判断的对象 true/false   $.isWindow() 判断传入的对象是不是window对象 需要判断的对象 true/false   $.isFunction()">
+<meta name="twitter:title" content="SpringBoot异常处理">
+<meta name="twitter:description" content="SpringBoot中对于异常处理提供了五种处理方式自定义错误页面1.创建一个Maven的项目2.在pom文件里面引入以下的依赖12345678910&amp;lt;dependency&amp;gt;      &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;      &amp;lt;artifactId&amp;gt;spring-boot-starter-we">
   
     <link rel="alternative" href="/atom.xml" title="刘先森de博客" type="application/atom+xml">
   
@@ -166,7 +166,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-JQuery-静态方法与遍历方法" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-SpringBoot异常处理" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
 		
@@ -175,13 +175,13 @@
         
   
     <h1 class="article-title" itemprop="name">
-      JQuery 静态方法与遍历方法
+      SpringBoot异常处理
     </h1>
   
 
         
-        <a href="/2019/09/04/JQuery-静态方法与遍历方法/" class="archive-article-date">
-  	<time datetime="2019-09-04T11:50:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-04</time>
+        <a href="/2019/09/08/SpringBoot异常处理/" class="archive-article-date">
+  	<time datetime="2019-09-08T01:17:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-08</time>
 </a>
 
         <!-- 不蒜子统计 -->
@@ -220,7 +220,7 @@
 	<div id="toc-article" class="toc-article">
 	    <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
 		<strong class="toc-title">文章目录</strong>
-           <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#JQuery的常用静态方法"><span class="toc-number">1.</span> <span class="toc-text">JQuery的常用静态方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#分类"><span class="toc-number">1.1.</span> <span class="toc-text">分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#代码演示"><span class="toc-number">1.2.</span> <span class="toc-text">代码演示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#结果分析"><span class="toc-number">1.3.</span> <span class="toc-text">结果分析</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JQuery的each-方法"><span class="toc-number">2.</span> <span class="toc-text">JQuery的each()方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#概念"><span class="toc-number">2.1.</span> <span class="toc-text">概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#代码演示-1"><span class="toc-number">2.2.</span> <span class="toc-text">代码演示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#结果分析-1"><span class="toc-number">2.3.</span> <span class="toc-text">结果分析</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JQuery当中holdReady-方法"><span class="toc-number">3.</span> <span class="toc-text">JQuery当中holdReady()方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#概念-1"><span class="toc-number">3.1.</span> <span class="toc-text">概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#代码演示-2"><span class="toc-number">3.2.</span> <span class="toc-text">代码演示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#结果分析-2"><span class="toc-number">3.3.</span> <span class="toc-text">结果分析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#注意点"><span class="toc-number">3.4.</span> <span class="toc-text">注意点</span></a></li></ol></li></ol>
+           <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#SpringBoot中对于异常处理提供了五种处理方式"><span class="toc-number">1.</span> <span class="toc-text">SpringBoot中对于异常处理提供了五种处理方式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#自定义错误页面"><span class="toc-number">1.1.</span> <span class="toc-text">自定义错误页面</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-创建一个Maven的项目"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.创建一个Maven的项目</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-在pom文件里面引入以下的依赖"><span class="toc-number">1.1.2.</span> <span class="toc-text">2.在pom文件里面引入以下的依赖</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#null"><span class="toc-number">1.1.3.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-在控制器里面编写一个方法，在方法里面写入错误信息"><span class="toc-number">1.1.4.</span> <span class="toc-text">3.在控制器里面编写一个方法，在方法里面写入错误信息</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-启动控制器，会发现跳转到SpringBoot的默认错误信息页面"><span class="toc-number">1.1.5.</span> <span class="toc-text">4.启动控制器，会发现跳转到SpringBoot的默认错误信息页面</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-原因"><span class="toc-number">1.1.6.</span> <span class="toc-text">5.原因</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-解决办法：自定义静态error页面方法"><span class="toc-number">1.1.7.</span> <span class="toc-text">6.解决办法：自定义静态error页面方法</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ExceptionHandle-注解处理异常"><span class="toc-number">1.2.</span> <span class="toc-text">@ExceptionHandle 注解处理异常</span></a></li></ol></li></ol>
          </div>
    <script type="text/javascript">
 	function showToc(){
@@ -243,93 +243,19 @@
 	
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="JQuery的常用静态方法"><a href="#JQuery的常用静态方法" class="headerlink" title="JQuery的常用静态方法"></a>JQuery的常用静态方法</h3><h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><table>
-<thead>
-<tr>
-<th align="center">语法</th>
-<th align="center">作用</th>
-<th align="center">参数</th>
-<th align="center">返回值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><em>$</em>.trim( str )</td>
-<td align="center">去除字符串两端的空白字符</td>
-<td align="center">需要去除空格的字符串</td>
-<td align="center">去除空格之后的字符串</td>
-</tr>
-<tr>
-<td align="center">$.isArray()</td>
-<td align="center">判断指定参数是不是一个数组</td>
-<td align="center">需要判断的对象</td>
-<td align="center">true/false</td>
-</tr>
-<tr>
-<td align="center">$.isWindow()</td>
-<td align="center">判断传入的对象是不是window对象</td>
-<td align="center">需要判断的对象</td>
-<td align="center">true/false</td>
-</tr>
-<tr>
-<td align="center">$.isFunction()</td>
-<td align="center">作用：判断传入的对象是不是函数</td>
-<td align="center">需要判断的对象</td>
-<td align="center">true/false</td>
-</tr>
-</tbody></table>
-<a id="more"></a>
+        <h3 id="SpringBoot中对于异常处理提供了五种处理方式"><a href="#SpringBoot中对于异常处理提供了五种处理方式" class="headerlink" title="SpringBoot中对于异常处理提供了五种处理方式"></a>SpringBoot中对于异常处理提供了五种处理方式</h3><h4 id="自定义错误页面"><a href="#自定义错误页面" class="headerlink" title="自定义错误页面"></a>自定义错误页面</h4><h5 id="1-创建一个Maven的项目"><a href="#1-创建一个Maven的项目" class="headerlink" title="1.创建一个Maven的项目"></a>1.创建一个Maven的项目</h5><h5 id="2-在pom文件里面引入以下的依赖"><a href="#2-在pom文件里面引入以下的依赖" class="headerlink" title="2.在pom文件里面引入以下的依赖"></a>2.在pom文件里面引入以下的依赖</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1.3.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-thymeleaf<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1.3.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="代码演示"><a href="#代码演示" class="headerlink" title="代码演示"></a>代码演示</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>JQuery当中的其它静态方法<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/jquery-1.8.3.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">        var str = "     pcliu     ";</span><br><span class="line">        console.log("--"+str+"--");</span><br><span class="line">        var res1 = $.trim(str);</span><br><span class="line">        console.log(res1);         // pcliu</span><br><span class="line"></span><br><span class="line">        var arr = [2,4,6,8,10];        		// 以下定义的为数组</span><br><span class="line">        var arrlike = &#123;1:3,2:5,3:7,4:9,length:5&#125;;   // 以下定义的为伪数组</span><br><span class="line">        var obj = &#123;"age":"18","sex":"男"&#125;;  // 对象</span><br><span class="line">        var fn = function () &#123;&#125;;		    // 函数</span><br><span class="line">        var w = window;				 	    // 全局对象</span><br><span class="line"></span><br><span class="line">        var res2 = $.isWindow(arr);</span><br><span class="line">        var res3 = $.isWindow(w);</span><br><span class="line">        console.log(res2);             //false</span><br><span class="line">        console.log(res3);             //true</span><br><span class="line"></span><br><span class="line">        var res4 = $.isArray(obj);</span><br><span class="line">        var res5 = $.isArray(arr);</span><br><span class="line">        console.log(res4);             //false</span><br><span class="line">        console.log(res5);             //true</span><br><span class="line"></span><br><span class="line">        var res6 = $.isFunction(obj);</span><br><span class="line">        var res7 = $.isFunction(fn);</span><br><span class="line">        var res8 = $.isFunction(jQuery);</span><br><span class="line">        console.log(res6);             //false</span><br><span class="line">        console.log(res7);             //true</span><br><span class="line">        console.log(res8);             //true</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h5 id><a href="#" class="headerlink" title></a><a id="more"></a></h5><h5 id="3-在控制器里面编写一个方法，在方法里面写入错误信息"><a href="#3-在控制器里面编写一个方法，在方法里面写入错误信息" class="headerlink" title="3.在控制器里面编写一个方法，在方法里面写入错误信息"></a>3.在控制器里面编写一个方法，在方法里面写入错误信息</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/show"</span>)</span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">showPage</span><span class="params">()</span></span>&#123;</span><br><span class="line">   String str = <span class="keyword">null</span>;</span><br><span class="line">   str.length();</span><br><span class="line">   <span class="keyword">return</span> <span class="string">"index"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="结果分析"><a href="#结果分析" class="headerlink" title="结果分析"></a>结果分析</h4><p>​    从上面可以轻易的判断我们传入的参数属于上面类型，其中$.trim()函数会移除字符串开始和末尾处的所有换行符，空格(包括连续的空格)和制表符。如果这些空白字符在字符串中间时，它们将被保留，不会被移除。此外，<strong>JQuery框架本质是一个函数</strong></p>
-<h3 id="JQuery的each-方法"><a href="#JQuery的each-方法" class="headerlink" title="JQuery的each()方法"></a>JQuery的each()方法</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><table>
-<thead>
-<tr>
-<th align="center">语法</th>
-<th align="center">参数</th>
-<th align="center">参数介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><em>$</em>.each( object, callback )</td>
-<td align="center"><em>object</em>   callback</td>
-<td align="center">Object类型 指定需要遍历的对象或数组          Function类型 指定的用于循环执行的函数</td>
-</tr>
-</tbody></table>
-<h4 id="代码演示-1"><a href="#代码演示-1" class="headerlink" title="代码演示"></a>代码演示</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>JQuery中的each方法<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/jquery-1.8.3.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">        $(function () &#123;</span><br><span class="line">            // 以下为使用JQuery中的each方法遍历数组</span><br><span class="line">            var arr = [2,4,6,8,10];</span><br><span class="line">            $.each(arr,function (index, value) &#123;</span><br><span class="line">                console.log(index,value);           // 0 2  1 4  2 6  3 8   4 10</span><br><span class="line">            &#125;);</span><br><span class="line">            //以下定义的为伪数组</span><br><span class="line">            var obj = &#123;1:3,2:5,3:7,4:9,length:5&#125;;</span><br><span class="line">            $.each(obj,function (index, value) &#123;</span><br><span class="line">                console.log(index,value);           // 0 undefined  1 3   2 5   3 7   4 9</span><br><span class="line">            &#125;);</span><br><span class="line"></span><br><span class="line">            // 以下为使用原生js的forEach方法遍历数组</span><br><span class="line">            var arr2 = [1,3,5,7,9];</span><br><span class="line">            arr2.forEach(function (value, index) &#123;</span><br><span class="line">                console.log(index,value);           // 0 1   1 3   2 5   3 7  4 9</span><br><span class="line">            &#125;);</span><br><span class="line">            //以下定义的为伪数组</span><br><span class="line">            var obj2 = &#123;1:3,2:5,3:7,4:9,length:5&#125;;</span><br><span class="line">            //伪数组没有forEach方法，以下强行写的，会报错</span><br><span class="line">            obj2.forEach(function (value, index) &#123;</span><br><span class="line">                console.log(index,value);</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;)</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h5 id="4-启动控制器，会发现跳转到SpringBoot的默认错误信息页面"><a href="#4-启动控制器，会发现跳转到SpringBoot的默认错误信息页面" class="headerlink" title="4.启动控制器，会发现跳转到SpringBoot的默认错误信息页面"></a>4.启动控制器，会发现跳转到SpringBoot的默认错误信息页面</h5><h5 id="5-原因"><a href="#5-原因" class="headerlink" title="5.原因"></a>5.原因</h5><p>​        SpringBoot 默认的处理异常的机制：SpringBoot 默认的已经提供了一套处理异常的机制。 一旦程序中出现了异常 SpringBoot 会像/error 的 url 发送请求。在 springBoot 中提供了一个 叫 BasicExceptionController 来处理/error 请求，然后跳转到默认显示异常的页面来展示异常 信息。</p>
+<h5 id="6-解决办法：自定义静态error页面方法"><a href="#6-解决办法：自定义静态error页面方法" class="headerlink" title="6.解决办法：自定义静态error页面方法"></a>6.解决办法：<strong>自定义静态error页面方法</strong></h5><p>​        如 果 我 们 需 要 将 所 有 的 异 常 同统一 跳 转 到 自 定 义 的 错 误 页 面 ， 需 要 在 src/main/resources/templates 目录下创建 error.html 页面。<strong>注意：名称必须叫 error</strong></p>
+<p>​        SpringBoot错误视图提供了以下错误属性：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">timestamp：错误发生时间；</span><br><span class="line">status：HTTP状态吗；</span><br><span class="line">error：错误原因；</span><br><span class="line">exception：异常的类名；</span><br><span class="line">message：异常消息（如果这个错误是由异常引起的）；</span><br><span class="line">errors：BindingResult异常里的各种错误（如果这个错误是由异常引起的）；</span><br><span class="line">trace：异常跟踪信息（如果这个错误是由异常引起的）；</span><br><span class="line">path：错误发生时请求的URL路径</span><br></pre></td></tr></table></figure>
 
-<h4 id="结果分析-1"><a href="#结果分析-1" class="headerlink" title="结果分析"></a>结果分析</h4><p>​    注意点1：JQyery中的静态方法each可以数组，同样也可以遍历伪数组，其中function函数里面也有2个参数，参数类型：( 当前遍历元素的索引, 遍历的元素 )</p>
-<p>​    注意点2：原生JS的forEach只可以遍历数组，不可以遍历伪数组，它其中function函数里面也有2个参数，参数类型：( 遍历的元素, 当前遍历元素的索引 )</p>
-<h3 id="JQuery当中holdReady-方法"><a href="#JQuery当中holdReady-方法" class="headerlink" title="JQuery当中holdReady()方法"></a>JQuery当中holdReady()方法</h3><h4 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h4><table>
-<thead>
-<tr>
-<th align="center">语法</th>
-<th align="center">参数</th>
-<th align="center">参数描述</th>
-<th align="center">功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><em>$</em>.holdReady( hold )</td>
-<td align="center">hold</td>
-<td align="center">Boolean类型 指示暂停或恢复被请求的ready事件</td>
-<td align="center"><em>$</em>.holdReady() 函数用于暂停或恢复.ready() 事件的执行</td>
-</tr>
-</tbody></table>
-<h4 id="代码演示-2"><a href="#代码演示-2" class="headerlink" title="代码演示"></a>代码演示</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;jQuery当中如果没有使用holdReady()方法&lt;/title&gt;</span><br><span class="line">    &lt;script src=&quot;js/jquery-1.8.3.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">         $(document).ready(function () &#123;</span><br><span class="line">             alert(&quot;你好！！&quot;);</span><br><span class="line">         &#125;);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;button&gt;回复ready事件&lt;/button&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        // 利用原生JS编写点击事件</span><br><span class="line">        var btn = document.getElementsByTagName(&quot;button&quot;)[0];</span><br><span class="line">        btn.onclick = function () &#123;</span><br><span class="line">           alert(&quot;点击成功&quot;);</span><br><span class="line">        &#125;;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>​    编写error.html页面</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span> <span class="attr">xmlns:th</span>=<span class="string">"http://www.thymeleaf.org"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>错误提示页面<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">class</span>=<span class="string">"layout"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrap"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- S 内容 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"panel-l container clearfix"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"error"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"title"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"code"</span> <span class="attr">th:text</span>=<span class="string">"$&#123;status&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>非常抱歉，没有找到您要查看的页面<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"common-hint-word"</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">th:text</span>=<span class="string">"$&#123;#dates.format(timestamp,'yyyy-MM-dd HH:mm:ss')&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">th:text</span>=<span class="string">"$&#123;messages&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">th:text</span>=<span class="string">"$&#123;error&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">th:text</span>=<span class="string">"$&#123;exception&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="结果分析-2"><a href="#结果分析-2" class="headerlink" title="结果分析"></a>结果分析</h4><p>​    jQuery当中如果没有使用holdReady()方法，会发现入口函数直接执行了，会弹出“你好”，这个效果不太好，我们需要暂停入口函数的执行，可以在入口函数执行前添加下面的代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.holdReady(true);</span><br></pre></td></tr></table></figure>
-
-<p>并且在按钮点击里面消除 holdReady() 方法的影响，添加下面代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.holdReady(false);</span><br></pre></td></tr></table></figure>
-
-<h4 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h4><ol>
-<li>该方法必须在文档靠前部分被调用，例如，在头部加载完 jQuery 脚本之后，立刻调用该方法。如果在 ready 事件已经被调用后再调用该方法，将不会起作用。 </li>
-<li>首先调用$.holdReady(true)[调用后 ready 事件将被锁定]。当准备好执行 ready 事件时，调用$.holdReady(false)。 </li>
-<li>可以对 ready 事件添加多个锁定，每个锁定对应一次$.holdReady(false)[解锁]调用。ready 事件将在所有的锁定都被解除，并且页面也已经准备好的情况下被触发</li>
-</ol>
-
+<h4 id="ExceptionHandle-注解处理异常"><a href="#ExceptionHandle-注解处理异常" class="headerlink" title="@ExceptionHandle 注解处理异常"></a>@ExceptionHandle 注解处理异常</h4>
       
 
       
@@ -376,7 +302,7 @@
 				
 				<br>
 				<strong>本文链接：</strong>
-				http://yoursite.com/2019/09/04/JQuery-静态方法与遍历方法/
+				http://yoursite.com/2019/09/08/SpringBoot异常处理/
 				<br>
 				<strong>版权声明：</strong>
 				本作品采用
@@ -406,7 +332,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">JQuery</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">SpringBoot</a>
         		</li>
       		
 		</ul>
@@ -465,7 +391,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/vl/create-qr-code/?size=150x150&data=http://pcliuStar.github.io/2019/09/04/JQuery-静态方法与遍历方法/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/vl/create-qr-code/?size=150x150&data=http://pcliuStar.github.io/2019/09/08/SpringBoot异常处理/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -479,18 +405,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/04/SpringMVC快速入门/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          SpringMVC快速入门
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/04/JQuery当中的常用方法一/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JQuery当中的常用方法一</div>
+    <a href="/2019/09/07/SpringBoot中Yaml文件使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SpringBoot中Yaml文件使用</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -517,7 +434,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#JQuery的常用静态方法"><span class="toc-number">1.</span> <span class="toc-text">JQuery的常用静态方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#分类"><span class="toc-number">1.1.</span> <span class="toc-text">分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#代码演示"><span class="toc-number">1.2.</span> <span class="toc-text">代码演示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#结果分析"><span class="toc-number">1.3.</span> <span class="toc-text">结果分析</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JQuery的each-方法"><span class="toc-number">2.</span> <span class="toc-text">JQuery的each()方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#概念"><span class="toc-number">2.1.</span> <span class="toc-text">概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#代码演示-1"><span class="toc-number">2.2.</span> <span class="toc-text">代码演示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#结果分析-1"><span class="toc-number">2.3.</span> <span class="toc-text">结果分析</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JQuery当中holdReady-方法"><span class="toc-number">3.</span> <span class="toc-text">JQuery当中holdReady()方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#概念-1"><span class="toc-number">3.1.</span> <span class="toc-text">概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#代码演示-2"><span class="toc-number">3.2.</span> <span class="toc-text">代码演示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#结果分析-2"><span class="toc-number">3.3.</span> <span class="toc-text">结果分析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#注意点"><span class="toc-number">3.4.</span> <span class="toc-text">注意点</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#SpringBoot中对于异常处理提供了五种处理方式"><span class="toc-number">1.</span> <span class="toc-text">SpringBoot中对于异常处理提供了五种处理方式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#自定义错误页面"><span class="toc-number">1.1.</span> <span class="toc-text">自定义错误页面</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-创建一个Maven的项目"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.创建一个Maven的项目</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-在pom文件里面引入以下的依赖"><span class="toc-number">1.1.2.</span> <span class="toc-text">2.在pom文件里面引入以下的依赖</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#null"><span class="toc-number">1.1.3.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-在控制器里面编写一个方法，在方法里面写入错误信息"><span class="toc-number">1.1.4.</span> <span class="toc-text">3.在控制器里面编写一个方法，在方法里面写入错误信息</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-启动控制器，会发现跳转到SpringBoot的默认错误信息页面"><span class="toc-number">1.1.5.</span> <span class="toc-text">4.启动控制器，会发现跳转到SpringBoot的默认错误信息页面</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-原因"><span class="toc-number">1.1.6.</span> <span class="toc-text">5.原因</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-解决办法：自定义静态error页面方法"><span class="toc-number">1.1.7.</span> <span class="toc-text">6.解决办法：自定义静态error页面方法</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ExceptionHandle-注解处理异常"><span class="toc-number">1.2.</span> <span class="toc-text">@ExceptionHandle 注解处理异常</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
