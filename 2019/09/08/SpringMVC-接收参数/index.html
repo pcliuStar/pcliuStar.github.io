@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>SpringBoot中Yaml文件使用 | 刘先森de博客</title>
+  <title>SpringMVC-接收参数 | 刘先森de博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="配置文件简介基本介绍1.SpringBoot使用一个全局的配置文件，配置文件名是固定的，配置文件除了使用application.properties类型,还可以是后缀名为:     .yml或.yaml的类型 　　　　application.properties 　　　　application.yml 2.配置文件放在src/main/resources目录或者类路径/config下 3.配置文件">
-<meta name="keywords" content="SpringBoot">
+  <meta name="description" content="使用传统request对象接收参数1.编写index.jsp123456&amp;lt;h2&amp;gt;使用传统request对象接收参数&amp;lt;/h2&amp;gt;&amp;lt;form action=&quot;$&amp;#123;pageContext.request.contextPath&amp;#125;/form1.action&quot; method=&quot;post&quot;&amp;gt;        商品名称：&amp;lt;input type=&quot;text">
+<meta name="keywords" content="SpringMVC">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SpringBoot中Yaml文件使用">
-<meta property="og:url" content="http://yoursite.com/2019/09/07/SpringBoot中Yaml文件使用/index.html">
+<meta property="og:title" content="SpringMVC-接收参数">
+<meta property="og:url" content="http://yoursite.com/2019/09/08/SpringMVC-接收参数/index.html">
 <meta property="og:site_name" content="刘先森de博客">
-<meta property="og:description" content="配置文件简介基本介绍1.SpringBoot使用一个全局的配置文件，配置文件名是固定的，配置文件除了使用application.properties类型,还可以是后缀名为:     .yml或.yaml的类型 　　　　application.properties 　　　　application.yml 2.配置文件放在src/main/resources目录或者类路径/config下 3.配置文件">
+<meta property="og:description" content="使用传统request对象接收参数1.编写index.jsp123456&amp;lt;h2&amp;gt;使用传统request对象接收参数&amp;lt;/h2&amp;gt;&amp;lt;form action=&quot;$&amp;#123;pageContext.request.contextPath&amp;#125;/form1.action&quot; method=&quot;post&quot;&amp;gt;        商品名称：&amp;lt;input type=&quot;text">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-07T05:22:30.675Z">
+<meta property="og:updated_time" content="2019-09-08T04:13:13.952Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SpringBoot中Yaml文件使用">
-<meta name="twitter:description" content="配置文件简介基本介绍1.SpringBoot使用一个全局的配置文件，配置文件名是固定的，配置文件除了使用application.properties类型,还可以是后缀名为:     .yml或.yaml的类型 　　　　application.properties 　　　　application.yml 2.配置文件放在src/main/resources目录或者类路径/config下 3.配置文件">
+<meta name="twitter:title" content="SpringMVC-接收参数">
+<meta name="twitter:description" content="使用传统request对象接收参数1.编写index.jsp123456&amp;lt;h2&amp;gt;使用传统request对象接收参数&amp;lt;/h2&amp;gt;&amp;lt;form action=&quot;$&amp;#123;pageContext.request.contextPath&amp;#125;/form1.action&quot; method=&quot;post&quot;&amp;gt;        商品名称：&amp;lt;input type=&quot;text">
   
     <link rel="alternative" href="/atom.xml" title="刘先森de博客" type="application/atom+xml">
   
@@ -166,7 +166,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-SpringBoot中Yaml文件使用" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-SpringMVC-接收参数" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
 		
@@ -175,13 +175,13 @@
         
   
     <h1 class="article-title" itemprop="name">
-      SpringBoot中Yaml文件使用
+      SpringMVC-接收参数
     </h1>
   
 
         
-        <a href="/2019/09/07/SpringBoot中Yaml文件使用/" class="archive-article-date">
-  	<time datetime="2019-09-07T13:27:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-07</time>
+        <a href="/2019/09/08/SpringMVC-接收参数/" class="archive-article-date">
+  	<time datetime="2019-09-08T04:13:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-08</time>
 </a>
 
         <!-- 不蒜子统计 -->
@@ -220,7 +220,7 @@
 	<div id="toc-article" class="toc-article">
 	    <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
 		<strong class="toc-title">文章目录</strong>
-           <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置文件简介"><span class="toc-number">1.</span> <span class="toc-text">配置文件简介</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#基本介绍"><span class="toc-number">1.1.</span> <span class="toc-text">基本介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置实列"><span class="toc-number">1.2.</span> <span class="toc-text">配置实列</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#YAML文件语法"><span class="toc-number">2.</span> <span class="toc-text">YAML文件语法</span></a></li></ol>
+           <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#使用传统request对象接收参数"><span class="toc-number">1.</span> <span class="toc-text">使用传统request对象接收参数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-编写index-jsp"><span class="toc-number">1.1.</span> <span class="toc-text">1.编写index.jsp</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-编写控制器获取"><span class="toc-number">1.2.</span> <span class="toc-text">2.编写控制器获取</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-编写结果页"><span class="toc-number">1.3.</span> <span class="toc-text">3.编写结果页</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#不使用request接收简单类型参数"><span class="toc-number">2.</span> <span class="toc-text">不使用request接收简单类型参数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#修改上面的控制器内容即可"><span class="toc-number">2.1.</span> <span class="toc-text">修改上面的控制器内容即可</span></a></li></ol></li></ol>
          </div>
    <script type="text/javascript">
 	function showToc(){
@@ -243,28 +243,17 @@
 	
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="配置文件简介"><a href="#配置文件简介" class="headerlink" title="配置文件简介"></a>配置文件简介</h3><h4 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h4><p>1.SpringBoot使用一个全局的配置文件，配置文件名是固定的，配置文件除了使用application.properties类型,还可以是后缀名为:     .yml或.yaml的类型</p>
-<p>　　　　application.properties</p>
-<p>　　　　application.yml</p>
-<p>2.配置文件放在src/main/resources目录或者类路径/config下</p>
-<p>3.配置文件的作用：可以修改SpringBoot自动配置的默认值；因为SpringBoot在底层都给我们自动配置好</p>
+        <h4 id="使用传统request对象接收参数"><a href="#使用传统request对象接收参数" class="headerlink" title="使用传统request对象接收参数"></a>使用传统request对象接收参数</h4><h5 id="1-编写index-jsp"><a href="#1-编写index-jsp" class="headerlink" title="1.编写index.jsp"></a>1.编写index.jsp</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;h2&gt;使用传统request对象接收参数&lt;/h2&gt;</span><br><span class="line">&lt;form action=<span class="string">"$&#123;pageContext.request.contextPath&#125;/form1.action"</span> method=<span class="string">"post"</span>&gt;</span><br><span class="line">        商品名称：&lt;input type=<span class="string">"text"</span> name=<span class="string">"goods_name"</span> placeholder=<span class="string">"请输入名称"</span>&gt;&lt;br/&gt;</span><br><span class="line">        商品价格：&lt;input type=<span class="string">"text"</span> name=<span class="string">"goods_price"</span> placeholder=<span class="string">"请输入价格"</span>&gt;&lt;br/&gt;</span><br><span class="line">        &lt;input type=<span class="string">"submit"</span> value=<span class="string">"提交"</span>&gt;</span><br><span class="line">&lt;/form&gt;&lt;hr&gt;</span><br></pre></td></tr></table></figure>
+
 <a id="more"></a>
 
-<p>4.yml是YAML（YAML Ain’t Markup Language）语言的文件，以数据为中心，使用空白缩进,分行组织数据, 比json、xml等更适合做配置文件</p>
-<p>　　　　YAML（YAML Ain’t Markup Language）</p>
-<p> 　　　   YAML A Markup Language：是一个标记语言</p>
-<p> 　　　   YAML isn’t Markup Language：不是一个标记语言；</p>
-<p>5.全局配置文件的可以对一些默认配置值进行修改</p>
-<p>6.注意点：</p>
-<p>　　　　如果有两个配置文件一个.properties和一个.yml</p>
-<p>　　　　会取两个并集,如果有相同的名称,会以properties为主</p>
-<h4 id="配置实列"><a href="#配置实列" class="headerlink" title="配置实列"></a>配置实列</h4><p>​    在YAML当中配置端口号</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">server:</span><br><span class="line">  port: 8080</span><br></pre></td></tr></table></figure>
+<h5 id="2-编写控制器获取"><a href="#2-编写控制器获取" class="headerlink" title="2.编写控制器获取"></a>2.编写控制器获取</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/form1.action"</span>)</span><br><span class="line"><span class="function"><span class="keyword">public</span> ModelAndView <span class="title">getGoods</span><span class="params">(HttpServletRequest request)</span></span>&#123;</span><br><span class="line">        <span class="comment">// 获取传来的参数</span></span><br><span class="line">        String goods_name = request.getParameter(<span class="string">"goods_name"</span>);</span><br><span class="line">        String goods_price = request.getParameter(<span class="string">"goods_price"</span>);</span><br><span class="line">        ModelAndView modelAndView = <span class="keyword">new</span> ModelAndView();</span><br><span class="line">        <span class="comment">// 存放到request域当中</span></span><br><span class="line">        modelAndView.addObject(<span class="string">"goods_name"</span>, goods_name);</span><br><span class="line">        modelAndView.addObject(<span class="string">"goods_price"</span>, goods_price);</span><br><span class="line">        <span class="comment">// 跳转到指定页面</span></span><br><span class="line">        modelAndView.setViewName(<span class="string">"/result"</span>);</span><br><span class="line">        <span class="keyword">return</span> modelAndView;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 
-<p>​    在xml当中配置端口号</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;server&gt;</span><br><span class="line">    &lt;port&gt;8080&lt;/port&gt;</span><br><span class="line">&lt;/server&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="3-编写结果页"><a href="#3-编写结果页" class="headerlink" title="3.编写结果页"></a>3.编写结果页</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page contentType=<span class="string">"text/html;charset=UTF-8"</span> language=<span class="string">"java"</span> %&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;Title&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h1&gt;使用传统request对象接收参数&lt;/h1&gt;</span><br><span class="line">    商品名称：$&#123;goods_name&#125;&lt;br&gt;</span><br><span class="line">    商品价格: $&#123;goods_price&#125;&lt;br&gt;&lt;hr&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
-<h3 id="YAML文件语法"><a href="#YAML文件语法" class="headerlink" title="YAML文件语法"></a>YAML文件语法</h3><p>​    </p>
+<h4 id="不使用request接收简单类型参数"><a href="#不使用request接收简单类型参数" class="headerlink" title="不使用request接收简单类型参数"></a>不使用request接收简单类型参数</h4><p>​    当请求的参数名称和处理器形参名称一致时会将请求参数与形参进行绑定</p>
+<h5 id="修改上面的控制器内容即可"><a href="#修改上面的控制器内容即可" class="headerlink" title="修改上面的控制器内容即可"></a>修改上面的控制器内容即可</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/form2.action"</span>)</span><br><span class="line"><span class="function"><span class="keyword">public</span> ModelAndView <span class="title">getGoods2</span><span class="params">(String goods_name, Integer goods_price)</span></span>&#123;</span><br><span class="line">  ModelAndView modelAndView = <span class="keyword">new</span> ModelAndView();</span><br><span class="line">  <span class="comment">// 存放到request域当中</span></span><br><span class="line">  modelAndView.addObject(<span class="string">"goods_name"</span>, goods_name);</span><br><span class="line">  modelAndView.addObject(<span class="string">"goods_price"</span>, goods_price);</span><br><span class="line">  <span class="comment">// 跳转到指定页面</span></span><br><span class="line">  modelAndView.setViewName(<span class="string">"/result"</span>);</span><br><span class="line">  <span class="keyword">return</span> modelAndView;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -312,7 +301,7 @@
 				
 				<br>
 				<strong>本文链接：</strong>
-				http://yoursite.com/2019/09/07/SpringBoot中Yaml文件使用/
+				http://yoursite.com/2019/09/08/SpringMVC-接收参数/
 				<br>
 				<strong>版权声明：</strong>
 				本作品采用
@@ -342,7 +331,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">SpringBoot</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">SpringMVC</a>
         		</li>
       		
 		</ul>
@@ -401,7 +390,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/vl/create-qr-code/?size=150x150&data=http://pcliuStar.github.io/2019/09/07/SpringBoot中Yaml文件使用/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/vl/create-qr-code/?size=150x150&data=http://pcliuStar.github.io/2019/09/08/SpringMVC-接收参数/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -415,18 +404,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/08/SpringBoot异常处理/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          SpringBoot异常处理
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/07/SpringBoot服务端表单数据校验/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">SpringBoot服务端表单数据校验</div>
+    <a href="/2019/09/08/SpringBoot异常处理/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SpringBoot异常处理</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -453,7 +433,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置文件简介"><span class="toc-number">1.</span> <span class="toc-text">配置文件简介</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#基本介绍"><span class="toc-number">1.1.</span> <span class="toc-text">基本介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置实列"><span class="toc-number">1.2.</span> <span class="toc-text">配置实列</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#YAML文件语法"><span class="toc-number">2.</span> <span class="toc-text">YAML文件语法</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#使用传统request对象接收参数"><span class="toc-number">1.</span> <span class="toc-text">使用传统request对象接收参数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-编写index-jsp"><span class="toc-number">1.1.</span> <span class="toc-text">1.编写index.jsp</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-编写控制器获取"><span class="toc-number">1.2.</span> <span class="toc-text">2.编写控制器获取</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-编写结果页"><span class="toc-number">1.3.</span> <span class="toc-text">3.编写结果页</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#不使用request接收简单类型参数"><span class="toc-number">2.</span> <span class="toc-text">不使用request接收简单类型参数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#修改上面的控制器内容即可"><span class="toc-number">2.1.</span> <span class="toc-text">修改上面的控制器内容即可</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
