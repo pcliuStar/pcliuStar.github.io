@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="刘先森de博客">
 <meta property="og:description" content="@RequestMapping相关属性Value属性作用​    用来设置请求路径，值是一个字符串数组，可以设置多个路径共同访问对应方法 1.编写index.jsp123&amp;lt;a href=&quot;$&amp;#123;pageContext.request.contextPath&amp;#125;/firstValue.action&quot;&amp;gt;测试requestMapping当中的value属性&amp;lt;/a&amp;gt;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-08T08:05:47.401Z">
+<meta property="og:updated_time" content="2019-09-08T08:09:42.449Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SpringMVC-@RequestMapping使用详解">
 <meta name="twitter:description" content="@RequestMapping相关属性Value属性作用​    用来设置请求路径，值是一个字符串数组，可以设置多个路径共同访问对应方法 1.编写index.jsp123&amp;lt;a href=&quot;$&amp;#123;pageContext.request.contextPath&amp;#125;/firstValue.action&quot;&amp;gt;测试requestMapping当中的value属性&amp;lt;/a&amp;gt;">
@@ -245,6 +245,8 @@
       
         <h3 id="RequestMapping相关属性"><a href="#RequestMapping相关属性" class="headerlink" title="@RequestMapping相关属性"></a>@RequestMapping相关属性</h3><h4 id="Value属性"><a href="#Value属性" class="headerlink" title="Value属性"></a>Value属性</h4><h5 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h5><p>​    用来设置请求路径，值是一个字符串数组，可以设置多个路径共同访问对应方法</p>
 <h5 id="1-编写index-jsp"><a href="#1-编写index-jsp" class="headerlink" title="1.编写index.jsp"></a>1.编写index.jsp</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href="$&#123;pageContext.request.contextPath&#125;/firstValue.action"&gt;测试requestMapping当中的value属性&lt;/a&gt;</span><br><span class="line">&lt;br&gt;</span><br><span class="line">&lt;a href="$&#123;pageContext.request.contextPath&#125;/secondValue.action"&gt;测试requestMapping当中的value属性&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
 
 <h5 id="2-编写控制器"><a href="#2-编写控制器" class="headerlink" title="2.编写控制器"></a>2.编写控制器</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringController</span> </span>&#123;</span><br><span class="line">  <span class="meta">@RequestMapping</span>(value = &#123;<span class="string">"/firstValue.action"</span>, <span class="string">"/secondValue.action"</span>&#125;)</span><br><span class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">firstValue</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">// 跳转到成功页面</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">"/success"</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 
@@ -607,11 +609,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shiro</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shiro</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
              
               <li class="article-tag-list-item">
