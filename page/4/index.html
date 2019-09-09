@@ -163,6 +163,121 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-SpringMVC-form标签与验证" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+		
+	
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/28/SpringMVC-form标签与验证/">SpringMVC-form标签与验证</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/28/SpringMVC-form标签与验证/" class="archive-article-date">
+  	<time datetime="2019-08-28T06:32:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-28</time>
+</a>
+
+        
+		
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  </span>
+        
+      </span>
+    </span>
+
+    
+</div>
+
+
+          
+        
+      </header>
+    
+	
+	
+		
+		<!-- 目录内容 -->
+
+<!-- 目录内容结束 -->
+	
+	
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="mvc-view-controller配置"><a href="#mvc-view-controller配置" class="headerlink" title="mvc:view-controller配置"></a>mvc:view-controller配置</h3><h4 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h4><p>​    当我们发送一个请求时,如果没有找到对应的mapping，则会对配置文件当中匹配mvc:view-controller</p>
+<h4 id="1-编写index-html"><a href="#1-编写index-html" class="headerlink" title="1.编写index.html"></a>1.编写index.html</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href="$&#123;pageContext.request.contextPath&#125;/testViewController"&gt;点击此链接不经过控制器直接进入到结果页&lt;/a&gt;&lt;hr&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-配置springmvc-xml"><a href="#2-配置springmvc-xml" class="headerlink" title="2.配置springmvc.xml"></a>2.配置springmvc.xml</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--自动跳转页面--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mvc:annotation-driven</span>/&gt;</span></span><br><span class="line"><span class="comment">&lt;!--注意点:使用时要添加前面的内容--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mvc:view-controller</span> <span class="attr">path</span>=<span class="string">"testViewController"</span> <span class="attr">view-name</span>=<span class="string">"/success"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-配置成功页success-jsp"><a href="#3-配置成功页success-jsp" class="headerlink" title="3.配置成功页success.jsp"></a>3.配置成功页success.jsp</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">%@</span> <span class="attr">page</span> <span class="attr">contentType</span>=<span class="string">"text/html;charset=UTF-8"</span> <span class="attr">language</span>=<span class="string">"java"</span> %&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>成功页<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="form标签基本使用"><a href="#form标签基本使用" class="headerlink" title="form标签基本使用"></a>form标签基本使用</h3><h4 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h4><h5 id="1-创建index-jsp"><a href="#1-创建index-jsp" class="headerlink" title="1.创建index.jsp"></a>1.创建index.jsp</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href="$&#123;pageContext.request.contextPath&#125;/testUpdate/1"&gt;测试更新&lt;/a&gt;&lt;hr&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id><a href="#" class="headerlink" title></a></h5>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">SpringMVC</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+	  
+	  
+	  
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/28/SpringMVC-form标签与验证/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
     <article id="post-SpringMVC-RequestMapping使用详解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -482,112 +597,6 @@
 
 
   
-    <article id="post-Shiro学习之-初步认识" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-		
-	
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/15/Shiro学习之-初步认识/">Shiro学习之-初步认识</a>
-    </h1>
-  
-
-        
-        <a href="/2019/08/15/Shiro学习之-初步认识/" class="archive-article-date">
-  	<time datetime="2019-08-15T09:32:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-15</time>
-</a>
-
-        
-		
-          <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  </span>
-        
-      </span>
-    </span>
-
-    
-</div>
-
-
-          
-        
-      </header>
-    
-	
-	
-		
-		<!-- 目录内容 -->
-
-<!-- 目录内容结束 -->
-	
-	
-	
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="shiro概述"><a href="#shiro概述" class="headerlink" title="shiro概述"></a>shiro概述</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. Apache Shiro是Java的一个安全框架</span><br><span class="line">2. Shiro是一个强大的简单易用的Java安全框架，主要用来做便捷的认证、授      权、加密、会话管理、与Web集成、缓存等</span><br><span class="line">3. Shiro使用起来小而简单</span><br><span class="line">4. spring中有spring security ,是一个权限框架，它和spring依赖过于紧    密，没有shiro使用简单</span><br><span class="line">5. shiro不依赖于spring,shiro不仅可以实现web应用的权限管理，还可以实    现c/s系统，分布式系统权限管理</span><br><span class="line">6. shiro属于轻量框架，越来越多企业项目开始使用shiro.</span><br></pre></td></tr></table></figure>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Shiro</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-	  
-	  
-	  
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/15/Shiro学习之-初步认识/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/">Next &raquo;</a>
@@ -709,11 +718,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shiro</a>
+                <a href="javascript:void(0)" class="js-tag color1">SpringBoot</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">SpringBoot</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shiro</a>
               </li>
              
               <li class="article-tag-list-item">
