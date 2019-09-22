@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="刘先森de博客">
 <meta property="og:description" content="索引概念1234帮助Mysql高效获取数据的数据结构索引就是数据结构类似新华字典的索引目录,可以通过索引目录快速查到你想要的字排好序的快速查找数据">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-10T13:05:21.662Z">
+<meta property="og:updated_time" content="2019-09-10T13:18:48.652Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySql优化-索引">
 <meta name="twitter:description" content="索引概念1234帮助Mysql高效获取数据的数据结构索引就是数据结构类似新华字典的索引目录,可以通过索引目录快速查到你想要的字排好序的快速查找数据">
@@ -251,7 +251,7 @@
 
 <h4 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">一般来说, 索引本身也很大, 索引往往以文件的形式存储到磁盘上</span><br><span class="line">索引也是一张表,该表保存了主键与索引字段,并指向实体表的记录.所以索引也是要占磁盘空间的</span><br><span class="line">虽然索引提高了查询速度,但是会降低更新表的速度.</span><br><span class="line">因为更新表时,  MYSQL不仅要保存数据,还要保存一下索引文件每次更新添加了索引列的字段,</span><br><span class="line">会调整因为更新所带来的键值变化后索引的信息</span><br></pre></td></tr></table></figure>
 
-<h4 id="索引分类"><a href="#索引分类" class="headerlink" title="索引分类"></a>索引分类</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">单值索引: 一个索引只包含间个列,一个表可以有多个单值索引</span><br><span class="line">		 一般来说, 一个表建立索引不要超过5个</span><br><span class="line">唯一索引: 索引列的值必须唯一,但允许有空值</span><br><span class="line">复合索引: 一个索引包含多个列</span><br><span class="line">全文索引: MySQL全文检索是利用查询关键字和查询列内容之间的相关度进行检索，可以利用全文索引来提高匹配的速度。</span><br></pre></td></tr></table></figure>
+<h4 id="索引分类"><a href="#索引分类" class="headerlink" title="索引分类"></a>索引分类</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">单值索引: 一个索引只包含间个列,一个表可以有多个单值索引</span><br><span class="line">一般来说, 一个表建立索引不要超过5个</span><br><span class="line">唯一索引: 索引列的值必须唯一,但允许有空值</span><br><span class="line">复合索引: 一个索引包含多个列</span><br><span class="line">全文索引: MySQL全文检索是利用查询关键字和查询列内容之间的相关度进行检索，可以利用全文索引来提高匹配的速度。</span><br></pre></td></tr></table></figure>
       
 
       
@@ -400,6 +400,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/10/03/MySql优化-Explain/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          MySql优化-Explain
+        
+      </div>
+    </a>
   
   
     <a href="/2019/10/01/MySql优化-join连接/" id="article-nav-older" class="article-nav-link-wrap">
@@ -588,11 +597,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+                <a href="javascript:void(0)" class="js-tag color3">MySQL高级</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MySQL高级</a>
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -609,6 +618,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Mysql初级</a>
               </li>
              
               <li class="article-tag-list-item">

@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>JQuery的初步了解 | 刘先森de博客</title>
+  <title>SpringBoot中Yaml文件使用 | 刘先森de博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="JQuery入口函数的其它写法​    与原生的JS不同，JQuery出现的原因就是为了简化JS的书写，它的目标也就是  “写的更少，做的更多”">
-<meta name="keywords" content="JQuery">
+  <meta name="description" content="配置文件简介基本介绍1.SpringBoot使用一个全局的配置文件，配置文件名是固定的，配置文件除了使用application.properties类型,还可以是后缀名为:     .yml或.yaml的类型 　　　　application.properties 　　　　application.yml 2.配置文件放在src/main/resources目录或者类路径/config下 3.配置文件">
+<meta name="keywords" content="SpringBoot">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JQuery的初步了解">
-<meta property="og:url" content="http://yoursite.com/2019/09/03/JQuery的初步了解/index.html">
+<meta property="og:title" content="SpringBoot中Yaml文件使用">
+<meta property="og:url" content="http://yoursite.com/2019/09/19/SpringBoot中Yaml文件使用/index.html">
 <meta property="og:site_name" content="刘先森de博客">
-<meta property="og:description" content="JQuery入口函数的其它写法​    与原生的JS不同，JQuery出现的原因就是为了简化JS的书写，它的目标也就是  “写的更少，做的更多”">
+<meta property="og:description" content="配置文件简介基本介绍1.SpringBoot使用一个全局的配置文件，配置文件名是固定的，配置文件除了使用application.properties类型,还可以是后缀名为:     .yml或.yaml的类型 　　　　application.properties 　　　　application.yml 2.配置文件放在src/main/resources目录或者类路径/config下 3.配置文件">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-05T13:51:12.883Z">
+<meta property="og:updated_time" content="2019-09-10T13:55:07.472Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JQuery的初步了解">
-<meta name="twitter:description" content="JQuery入口函数的其它写法​    与原生的JS不同，JQuery出现的原因就是为了简化JS的书写，它的目标也就是  “写的更少，做的更多”">
+<meta name="twitter:title" content="SpringBoot中Yaml文件使用">
+<meta name="twitter:description" content="配置文件简介基本介绍1.SpringBoot使用一个全局的配置文件，配置文件名是固定的，配置文件除了使用application.properties类型,还可以是后缀名为:     .yml或.yaml的类型 　　　　application.properties 　　　　application.yml 2.配置文件放在src/main/resources目录或者类路径/config下 3.配置文件">
   
     <link rel="alternative" href="/atom.xml" title="刘先森de博客" type="application/atom+xml">
   
@@ -166,7 +166,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-JQuery的初步了解" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-SpringBoot中Yaml文件使用" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
 		
@@ -175,13 +175,13 @@
         
   
     <h1 class="article-title" itemprop="name">
-      JQuery的初步了解
+      SpringBoot中Yaml文件使用
     </h1>
   
 
         
-        <a href="/2019/09/03/JQuery的初步了解/" class="archive-article-date">
-  	<time datetime="2019-09-03T04:19:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-03</time>
+        <a href="/2019/09/19/SpringBoot中Yaml文件使用/" class="archive-article-date">
+  	<time datetime="2019-09-19T13:27:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-19</time>
 </a>
 
         <!-- 不蒜子统计 -->
@@ -220,7 +220,7 @@
 	<div id="toc-article" class="toc-article">
 	    <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
 		<strong class="toc-title">文章目录</strong>
-           <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#JQuery入口函数的其它写法"><span class="toc-number">1.</span> <span class="toc-text">JQuery入口函数的其它写法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#代码演示"><span class="toc-number">1.1.</span> <span class="toc-text">代码演示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#分析"><span class="toc-number">1.2.</span> <span class="toc-text">分析</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JQuery冲突问题"><span class="toc-number">2.</span> <span class="toc-text">JQuery冲突问题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#代码演示-1"><span class="toc-number">2.1.</span> <span class="toc-text">代码演示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#结果分析"><span class="toc-number">2.2.</span> <span class="toc-text">结果分析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#解决方案一"><span class="toc-number">2.3.</span> <span class="toc-text">解决方案一</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#解决方案二"><span class="toc-number">2.4.</span> <span class="toc-text">解决方案二</span></a></li></ol></li></ol>
+           <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置文件简介"><span class="toc-number">1.</span> <span class="toc-text">配置文件简介</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#基本介绍"><span class="toc-number">1.1.</span> <span class="toc-text">基本介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置实列"><span class="toc-number">1.2.</span> <span class="toc-text">配置实列</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#YAML文件语法"><span class="toc-number">2.</span> <span class="toc-text">YAML文件语法</span></a></li></ol>
          </div>
    <script type="text/javascript">
 	function showToc(){
@@ -243,23 +243,28 @@
 	
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="JQuery入口函数的其它写法"><a href="#JQuery入口函数的其它写法" class="headerlink" title="JQuery入口函数的其它写法"></a>JQuery入口函数的其它写法</h3><p>​    与原生的JS不同，JQuery出现的原因就是为了简化JS的书写，它的目标也就是  “写的更少，做的更多”</p>
+        <h3 id="配置文件简介"><a href="#配置文件简介" class="headerlink" title="配置文件简介"></a>配置文件简介</h3><h4 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h4><p>1.SpringBoot使用一个全局的配置文件，配置文件名是固定的，配置文件除了使用application.properties类型,还可以是后缀名为:     .yml或.yaml的类型</p>
+<p>　　　　application.properties</p>
+<p>　　　　application.yml</p>
+<p>2.配置文件放在src/main/resources目录或者类路径/config下</p>
+<p>3.配置文件的作用：可以修改SpringBoot自动配置的默认值；因为SpringBoot在底层都给我们自动配置好</p>
 <a id="more"></a>
 
-<h4 id="代码演示"><a href="#代码演示" class="headerlink" title="代码演示"></a>代码演示</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>JQuery入口函数的其它写法<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/jquery-1.4.2.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        $(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            alert(<span class="string">"第一种写法"</span>);</span></span><br><span class="line">        &#125;);</span><br><span class="line">        </span><br><span class="line"><span class="javascript">        jQuery(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            alert(<span class="string">"第二种写法"</span>);</span></span><br><span class="line">        &#125;);</span><br><span class="line">        </span><br><span class="line"><span class="javascript">        $(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            alert(<span class="string">"第三种写法"</span>);</span></span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line"><span class="javascript">        jQuery(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            alert(<span class="string">"第四种写法"</span>);</span></span><br><span class="line">        &#125;)</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>4.yml是YAML（YAML Ain’t Markup Language）语言的文件，以数据为中心，使用空白缩进,分行组织数据, 比json、xml等更适合做配置文件</p>
+<p>　　　　YAML（YAML Ain’t Markup Language）</p>
+<p> 　　　   YAML A Markup Language：是一个标记语言</p>
+<p> 　　　   YAML isn’t Markup Language：不是一个标记语言；</p>
+<p>5.全局配置文件的可以对一些默认配置值进行修改</p>
+<p>6.注意点：</p>
+<p>　　　　如果有两个配置文件一个.properties和一个.yml</p>
+<p>　　　　会取两个并集,如果有相同的名称,会以properties为主</p>
+<h4 id="配置实列"><a href="#配置实列" class="headerlink" title="配置实列"></a>配置实列</h4><p>​    在YAML当中配置端口号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">server:</span><br><span class="line">  port: 8080</span><br></pre></td></tr></table></figure>
 
-<h4 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h4><p>​    上面展示了四种不同的入口函数写法，比较推荐使用的是第三种写法</p>
-<h3 id="JQuery冲突问题"><a href="#JQuery冲突问题" class="headerlink" title="JQuery冲突问题"></a>JQuery冲突问题</h3><p>​    如果在一个新的js框架文件里面也使用了 <strong>$</strong>  符号，就会出现冲突问题, 这时后面的js文件的 <strong>$</strong> 符号会覆盖jquery里面的 <strong>$</strong> 符号的作用</p>
-<p>​    列如我们新创建一个test.js文件，里面值添加 var $ = 100;  将这个JS文件引入到下面的代码中，会发现  不会弹出   刘文明</p>
-<h4 id="代码演示-1"><a href="#代码演示-1" class="headerlink" title="代码演示"></a>代码演示</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>_05JQuery冲突问题<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/jquery-1.4.2.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/test.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        $(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            alert(<span class="string">"刘文明"</span>);</span></span><br><span class="line">        &#125;);</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>​    在xml当中配置端口号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;server&gt;</span><br><span class="line">    &lt;port&gt;8080&lt;/port&gt;</span><br><span class="line">&lt;/server&gt;</span><br></pre></td></tr></table></figure>
 
-<h4 id="结果分析"><a href="#结果分析" class="headerlink" title="结果分析"></a>结果分析</h4><p>​    由于我们是后引入的test.js文件，所以他会覆盖前面的jquery里面的 $ 符号，也就会发生冲突问题</p>
-<h4 id="解决方案一"><a href="#解决方案一" class="headerlink" title="解决方案一"></a>解决方案一</h4><p>​    在我们执行的代码前添加以下代码，去释放<strong>$</strong>的所有权，释放之后不可以在jquery的入口函数使用 <strong>$</strong> 了，而是要使用jQuery</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">jQuery</span><span class="selector-class">.noConflict</span>();</span><br></pre></td></tr></table></figure>
-
-<h4 id="解决方案二"><a href="#解决方案二" class="headerlink" title="解决方案二"></a>解决方案二</h4><p>​    如果我们不喜欢在代码中使用<strong>$</strong> 符号，我们就可以使用以下代码自定义一个访问符号,  这个时候我们在jquery的入口函数使用 <strong>$</strong> 了，而是要使用 lj</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var lj = jQuery.noConflict();</span><br></pre></td></tr></table></figure>
-
+<h3 id="YAML文件语法"><a href="#YAML文件语法" class="headerlink" title="YAML文件语法"></a>YAML文件语法</h3><p>​    </p>
 
       
 
@@ -307,7 +312,7 @@
 				
 				<br>
 				<strong>本文链接：</strong>
-				http://yoursite.com/2019/09/03/JQuery的初步了解/
+				http://yoursite.com/2019/09/19/SpringBoot中Yaml文件使用/
 				<br>
 				<strong>版权声明：</strong>
 				本作品采用
@@ -337,7 +342,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">JQuery</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">SpringBoot</a>
         		</li>
       		
 		</ul>
@@ -396,7 +401,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/vl/create-qr-code/?size=150x150&data=http://pcliuStar.github.io/2019/09/03/JQuery的初步了解/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/vl/create-qr-code/?size=150x150&data=http://pcliuStar.github.io/2019/09/19/SpringBoot中Yaml文件使用/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -410,18 +415,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/03/JQuery选择器/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/09/20/SpringBoot服务端表单数据校验/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          JQuery选择器
+          SpringBoot服务端表单数据校验
         
       </div>
     </a>
   
   
-    <a href="/2019/08/30/SpringMVC-文件上传与下载/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">SpringMVC-文件上传与下载</div>
+    <a href="/2019/09/18/SpringBoot异常处理/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SpringBoot异常处理</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -448,7 +453,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#JQuery入口函数的其它写法"><span class="toc-number">1.</span> <span class="toc-text">JQuery入口函数的其它写法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#代码演示"><span class="toc-number">1.1.</span> <span class="toc-text">代码演示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#分析"><span class="toc-number">1.2.</span> <span class="toc-text">分析</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JQuery冲突问题"><span class="toc-number">2.</span> <span class="toc-text">JQuery冲突问题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#代码演示-1"><span class="toc-number">2.1.</span> <span class="toc-text">代码演示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#结果分析"><span class="toc-number">2.2.</span> <span class="toc-text">结果分析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#解决方案一"><span class="toc-number">2.3.</span> <span class="toc-text">解决方案一</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#解决方案二"><span class="toc-number">2.4.</span> <span class="toc-text">解决方案二</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置文件简介"><span class="toc-number">1.</span> <span class="toc-text">配置文件简介</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#基本介绍"><span class="toc-number">1.1.</span> <span class="toc-text">基本介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置实列"><span class="toc-number">1.2.</span> <span class="toc-text">配置实列</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#YAML文件语法"><span class="toc-number">2.</span> <span class="toc-text">YAML文件语法</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -606,11 +611,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+                <a href="javascript:void(0)" class="js-tag color3">MySQL高级</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MySQL高级</a>
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -627,6 +632,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Mysql初级</a>
               </li>
              
               <li class="article-tag-list-item">
