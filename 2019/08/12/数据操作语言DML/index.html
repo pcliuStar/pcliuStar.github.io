@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>数据操作语言DML | 刘先森de博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="插入操作1234567普通插入: INSERT INTO 表名（列名1，列名2 ...）VALUE (列值1，列值2...);批量插入: INSERT INTO 表名（列名1，列名2 ...）VALUES (列值1，列值2...)，(列值1，列值2...);注意事项：列名与列值的类型、个数、顺序要一一对应		值不要超出列定义的长度		插入的日期和字符一样，都使用引号括起来   更新操作123456">
+  <meta name="description" content="插入操作1234567普通插入: INSERT INTO 表名（列名1，列名2 ...）VALUE (列值1，列值2...);批量插入: INSERT INTO 表名（列名1，列名2 ...）VALUES (列值1，列值2...)，(列值1，列值2...);注意事项：列名与列值的类型、个数、顺序要一一对应		值不要超出列定义的长度		插入的日期和字符一样，都使用引号括起来">
 <meta name="keywords" content="Mysql初级">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据操作语言DML">
 <meta property="og:url" content="http://yoursite.com/2019/08/12/数据操作语言DML/index.html">
 <meta property="og:site_name" content="刘先森de博客">
-<meta property="og:description" content="插入操作1234567普通插入: INSERT INTO 表名（列名1，列名2 ...）VALUE (列值1，列值2...);批量插入: INSERT INTO 表名（列名1，列名2 ...）VALUES (列值1，列值2...)，(列值1，列值2...);注意事项：列名与列值的类型、个数、顺序要一一对应		值不要超出列定义的长度		插入的日期和字符一样，都使用引号括起来   更新操作123456">
+<meta property="og:description" content="插入操作1234567普通插入: INSERT INTO 表名（列名1，列名2 ...）VALUE (列值1，列值2...);批量插入: INSERT INTO 表名（列名1，列名2 ...）VALUES (列值1，列值2...)，(列值1，列值2...);注意事项：列名与列值的类型、个数、顺序要一一对应		值不要超出列定义的长度		插入的日期和字符一样，都使用引号括起来">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-22T11:51:40.791Z">
+<meta property="og:updated_time" content="2019-09-22T12:30:27.713Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据操作语言DML">
-<meta name="twitter:description" content="插入操作1234567普通插入: INSERT INTO 表名（列名1，列名2 ...）VALUE (列值1，列值2...);批量插入: INSERT INTO 表名（列名1，列名2 ...）VALUES (列值1，列值2...)，(列值1，列值2...);注意事项：列名与列值的类型、个数、顺序要一一对应		值不要超出列定义的长度		插入的日期和字符一样，都使用引号括起来   更新操作123456">
+<meta name="twitter:description" content="插入操作1234567普通插入: INSERT INTO 表名（列名1，列名2 ...）VALUE (列值1，列值2...);批量插入: INSERT INTO 表名（列名1，列名2 ...）VALUES (列值1，列值2...)，(列值1，列值2...);注意事项：列名与列值的类型、个数、顺序要一一对应		值不要超出列定义的长度		插入的日期和字符一样，都使用引号括起来">
   
     <link rel="alternative" href="/atom.xml" title="刘先森de博客" type="application/atom+xml">
   
@@ -244,6 +244,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h4 id="插入操作"><a href="#插入操作" class="headerlink" title="插入操作"></a>插入操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">普通插入: INSERT INTO 表名（列名1，列名2 ...）VALUE (列值1，列值2...);</span><br><span class="line"></span><br><span class="line">批量插入: INSERT INTO 表名（列名1，列名2 ...）VALUES (列值1，列值2...)，(列值1，列值2...);</span><br><span class="line"></span><br><span class="line">注意事项：列名与列值的类型、个数、顺序要一一对应</span><br><span class="line">		值不要超出列定义的长度</span><br><span class="line">		插入的日期和字符一样，都使用引号括起来</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
 
 <hr>
 <h4 id="更新操作"><a href="#更新操作" class="headerlink" title="更新操作"></a>更新操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">语法： UPDATE 表名 SET 列名1=列值1，列名2=列值2 .... WHERE 列名=值</span><br><span class="line"></span><br><span class="line"># 把所有学生的分数改为90</span><br><span class="line">update student set score =60;</span><br><span class="line"></span><br><span class="line"># 把姓名为zs的学生分数改为60</span><br><span class="line">update student set score =60 where name = &quot;zs&quot;;</span><br><span class="line"></span><br><span class="line"># 把姓名为李四的年龄改为20和分数改为70</span><br><span class="line">update student set score=70,age=20 where name = &quot;李四&quot;;</span><br><span class="line"></span><br><span class="line"># 把wc的年龄在原来基础上加1岁</span><br><span class="line">update student set age = age+1 where name = &quot;wc&quot;;</span><br></pre></td></tr></table></figure>
@@ -598,11 +600,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MySQL高级</a>
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+                <a href="javascript:void(0)" class="js-tag color3">MySQL高级</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -626,11 +628,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Thymeleaf</a>
+                <a href="javascript:void(0)" class="js-tag color3">Swagger</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Swagger</a>
+                <a href="javascript:void(0)" class="js-tag color5">Thymeleaf</a>
               </li>
             
             <div class="clearfix"></div>
